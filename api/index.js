@@ -21,7 +21,7 @@ mongoose.connection.on("disconnected", ()=>{
 
 //Middlewares
 
-app.use("/auth", authRoute);
+app.use("/", authRoute);
 
 app.listen(3000, ()=>{
   connect()
